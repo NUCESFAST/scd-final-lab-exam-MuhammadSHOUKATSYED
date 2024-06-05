@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('4c04f4a2-1dfc-47dd-bd88-4c125c920b75') // Docker Hub credentials ID
-        IMAGE_NAME = 'muhammadshoukat/scdlabexay' // Change to your Docker Hub username and image name
+        IMAGE_NAME = 'muhammadshoukat/scdlabexam' // Change to your Docker Hub username and image name
         GIT_REPO = 'https://github.com/NUCESFAST/scd-final-lab-exam-MuhammadSHOUKATSYED.git' // Change to your GitHub repository
     }
 
