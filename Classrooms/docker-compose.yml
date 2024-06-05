@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  classrooms:
+    build: .
+    ports:
+      - "4304:4304"
+    depends_on:
+      - mongo
+
+  mongo:
+    build: .
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:

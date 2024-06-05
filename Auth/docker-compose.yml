@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  auth:
+    build: .
+    ports:
+      - "4303:4303"
+    depends_on:
+      - mongo
+
+  mongo:
+    build: .
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
